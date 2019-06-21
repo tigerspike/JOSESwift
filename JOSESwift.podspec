@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
 
   s.swift_version     = "4.2"
   s.platform          = :ios, "10.0"
-  s.source            = { :git => "https://github.com/airsidemobile/JOSESwift.git", :tag => "#{s.version}" }
+  s.source            = { :git => "https://github.com/tigerspike/JOSESwift.git", :tag => "#{s.version}" }
   s.source_files      = "JOSESwift/**/*.{h,swift}"
+  s.dependency 'CryptoSwift'
 end
