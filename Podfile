@@ -6,5 +6,5 @@ target 'JOSESwift' do
   use_frameworks!
 
   # Pods for JOSESwift
-  pod 'CryptoSwift', '~> 1.0.0'
+  pod 'CryptoSwift', '0.15.0'
 end
