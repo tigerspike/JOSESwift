@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C6955EC8F9FD39805B5E744 /* Pods_JOSESwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0ACC4FF1BCDF0D045DBFCF /* Pods_JOSESwift.framework */; };
 		5FB760497BB7711EFB470B5A /* ECKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB76A41AECF99F3673C1C40 /* ECKeys.swift */; };
 		5FB76093CE81BF1F8E7C254A /* JWKECDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7625CF5EF5D8F2135967F /* JWKECDecodingTests.swift */; };
 		5FB7628EC6EA2C4263853DE9 /* DataECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7604267B94DC5091D7105 /* DataECPrivateKey.swift */; };
@@ -84,6 +85,7 @@
 		65F44EB11FE2D941000C5EA0 /* JWK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F44EB01FE2D941000C5EA0 /* JWK.swift */; };
 		65F44EB31FE2E1C6000C5EA0 /* RSAKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F44EB21FE2E1C6000C5EA0 /* RSAKeys.swift */; };
 		65FBFDE71F45CC7C005C7D68 /* JOSESwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 65FBFDE51F45CC7C005C7D68 /* JOSESwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		687A73CF22C0EC170037B862 /* AESGCMEncrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687A73CE22C0EC170037B862 /* AESGCMEncrypter.swift */; };
 		8A30B8F822118FD0001834E3 /* DeflateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30B8F722118FD0001834E3 /* DeflateWrapper.swift */; };
 		8A30B8FA22118FE6001834E3 /* JWECompressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30B8F922118FE6001834E3 /* JWECompressionTests.swift */; };
 		8A4B08B22213FF0600828536 /* Compressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B08B12213FF0600828536 /* Compressor.swift */; };
@@ -123,6 +125,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C0ACC4FF1BCDF0D045DBFCF /* Pods_JOSESwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JOSESwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB7604267B94DC5091D7105 /* DataECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataECPrivateKey.swift; sourceTree = "<group>"; };
 		5FB760DB390F90F91102DB74 /* EC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EC.swift; sourceTree = "<group>"; };
 		5FB7625CF5EF5D8F2135967F /* JWKECDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWKECDecodingTests.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 		5FB76E4A3A52AAC72B1F33F0 /* SecKeyECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyECPrivateKey.swift; sourceTree = "<group>"; };
 		5FB76E8AD96EA19B669A5E1D /* ECPublicKeyToSecKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPublicKeyToSecKeyTests.swift; sourceTree = "<group>"; };
 		5FB76EBD36093E9EC475BC2B /* ECKeyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECKeyCodable.swift; sourceTree = "<group>"; };
+		6257510C1F3EF6A1BF240373 /* Pods-JOSESwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOSESwift.release.xcconfig"; path = "Target Support Files/Pods-JOSESwift/Pods-JOSESwift.release.xcconfig"; sourceTree = "<group>"; };
 		6505236D1FB4940100E0B1B1 /* AESEncrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncrypter.swift; sourceTree = "<group>"; };
 		6505236F1FB494BE00E0B1B1 /* AESDecrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESDecrypter.swift; sourceTree = "<group>"; };
 		6506D9E820F4CA2000F34DD8 /* SymmetricKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricKeyTests.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 		65FBFDE21F45CC7C005C7D68 /* JOSESwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JOSESwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FBFDE51F45CC7C005C7D68 /* JOSESwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOSESwift.h; sourceTree = "<group>"; };
 		65FBFDE61F45CC7C005C7D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687A73CE22C0EC170037B862 /* AESGCMEncrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESGCMEncrypter.swift; sourceTree = "<group>"; };
 		8A30B8F722118FD0001834E3 /* DeflateWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeflateWrapper.swift; sourceTree = "<group>"; };
 		8A30B8F922118FE6001834E3 /* JWECompressionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWECompressionTests.swift; sourceTree = "<group>"; };
 		8A4B08B12213FF0600828536 /* Compressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compressor.swift; sourceTree = "<group>"; };
@@ -229,6 +234,7 @@
 		C8A5923F1FC71586009CEFA6 /* RSADecrypterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSADecrypterTests.swift; sourceTree = "<group>"; };
 		C8EE14531FAC797500A616E4 /* RSAVerifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAVerifierTests.swift; sourceTree = "<group>"; };
 		C8F0964F1FC56B25000BEE4D /* RSAEncrypterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAEncrypterTests.swift; sourceTree = "<group>"; };
+		FCF6AC7959E1728D20C57868 /* Pods-JOSESwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOSESwift.debug.xcconfig"; path = "Target Support Files/Pods-JOSESwift/Pods-JOSESwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,12 +250,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6955EC8F9FD39805B5E744 /* Pods_JOSESwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650C201BB51EA2FA71D16BE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCF6AC7959E1728D20C57868 /* Pods-JOSESwift.debug.xcconfig */,
+				6257510C1F3EF6A1BF240373 /* Pods-JOSESwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		65125A2C1FBF6B79007CF3AE /* JWS */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +445,7 @@
 				6505236F1FB494BE00E0B1B1 /* AESDecrypter.swift */,
 				5FB76AF2833DDD77D56D6D3F /* ECSigner.swift */,
 				5FB767ECBB50E5A47C671DC1 /* ECVerifier.swift */,
+				687A73CE22C0EC170037B862 /* AESGCMEncrypter.swift */,
 			);
 			name = CryptoInterface;
 			sourceTree = "<group>";
@@ -451,6 +468,7 @@
 				65A9D3D81F45CDD7004E0B61 /* Tests */,
 				65FBFDE31F45CC7C005C7D68 /* Products */,
 				C8610F54202DD93600859FCC /* Frameworks */,
+				650C201BB51EA2FA71D16BE8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -483,6 +501,7 @@
 		C8610F54202DD93600859FCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C0ACC4FF1BCDF0D045DBFCF /* Pods_JOSESwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -542,11 +561,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65FBFDEA1F45CC7C005C7D68 /* Build configuration list for PBXNativeTarget "JOSESwift" */;
 			buildPhases = (
+				DB7385E5DDCE4D3AB74A2935 /* [CP] Check Pods Manifest.lock */,
 				65FBFDDD1F45CC7C005C7D68 /* Sources */,
 				65FBFDDE1F45CC7C005C7D68 /* Frameworks */,
 				65FBFDDF1F45CC7C005C7D68 /* Headers */,
 				65FBFDE01F45CC7C005C7D68 /* Resources */,
-				4E06574B223CC78D00D7A199 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -619,7 +638,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E06574B223CC78D00D7A199 /* SwiftLint */ = {
+		DB7385E5DDCE4D3AB74A2935 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -627,15 +646,19 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = SwiftLint;
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JOSESwift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint or run `brew bundle`\"\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -700,6 +723,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687A73CF22C0EC170037B862 /* AESGCMEncrypter.swift in Sources */,
 				65617FCD1F90FB7600D8C743 /* RSAEncrypter.swift in Sources */,
 				65617FCB1F90F8C700D8C743 /* Encrypter.swift in Sources */,
 				65E733CC1FEBE8320009EAC6 /* JWKExtensions.swift in Sources */,
@@ -916,6 +940,7 @@
 		};
 		65FBFDEB1F45CC7C005C7D68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF6AC7959E1728D20C57868 /* Pods-JOSESwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -938,6 +963,7 @@
 		};
 		65FBFDEC1F45CC7C005C7D68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6257510C1F3EF6A1BF240373 /* Pods-JOSESwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;

@@ -31,6 +31,8 @@ internal enum AESError: Error {
     case cannotPerformOperationOnEmptyDataBuffer
 }
 
+// Quicky and hacky way to remove the error. Ideally we should be able to update this class to support for GCM.
+
 fileprivate extension SymmetricKeyAlgorithm {
     var ccAlgorithm: CCAlgorithm {
         switch self {
@@ -38,6 +40,9 @@ fileprivate extension SymmetricKeyAlgorithm {
             return CCAlgorithm(kCCAlgorithmAES128)
 
         case .A128CBCHS256:
+            return CCAlgorithm(kCCAlgorithmAES128)
+            
+        case .A256GCM:
             return CCAlgorithm(kCCAlgorithmAES128)
         }
     }
@@ -48,6 +53,9 @@ fileprivate extension SymmetricKeyAlgorithm {
             return key.count == kCCKeySizeAES256
 
         case .A128CBCHS256:
+            return key.count == kCCKeySizeAES128
+            
+        case .A256GCM:
             return key.count == kCCKeySizeAES128
         }
     }
@@ -67,7 +75,7 @@ internal struct AES {
     /// - Throws: `AESError` if any error occurs during encryption.
     static func encrypt(plaintext: Data, with encryptionKey: KeyType, using algorithm: SymmetricKeyAlgorithm, and initializationVector: Data) throws -> Data {
         switch algorithm {
-        case .A256CBCHS512, .A128CBCHS256:
+        case .A256CBCHS512, .A128CBCHS256, .A256GCM:
             guard algorithm.checkAESKeyLength(for: encryptionKey) else {
                 throw AESError.keyLengthNotSatisfied
             }
@@ -99,7 +107,7 @@ internal struct AES {
     /// - Throws: `AESError` if any error occurs during decryption.
     static func decrypt(cipherText: Data, with decryptionKey: Data, using algorithm: SymmetricKeyAlgorithm, and initializationVector: Data) throws -> Data {
         switch algorithm {
-        case .A256CBCHS512, .A128CBCHS256:
+        case .A256CBCHS512, .A128CBCHS256, .A256GCM:
             guard algorithm.checkAESKeyLength(for: decryptionKey) else {
                 throw AESError.keyLengthNotSatisfied
             }
