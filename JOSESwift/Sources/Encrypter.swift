@@ -53,9 +53,9 @@ internal protocol SymmetricEncrypter {
 
 public struct EncryptionContext {
     let encryptedKey: Data
+    let initializationVector: Data
     let ciphertext: Data
     let authenticationTag: Data
-    let initializationVector: Data
 }
 
 public struct SymmetricEncryptionContext {
@@ -139,9 +139,9 @@ public struct Encrypter<KeyType> {
 
         return EncryptionContext(
             encryptedKey: encryptedKey,
+            initializationVector: symmetricContext.initializationVector,
             ciphertext: symmetricContext.ciphertext,
-            authenticationTag: symmetricContext.authenticationTag,
-            initializationVector: symmetricContext.initializationVector
+            authenticationTag: symmetricContext.authenticationTag
         )
     }
 }
